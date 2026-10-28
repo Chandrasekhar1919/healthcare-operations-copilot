@@ -1,0 +1,31 @@
+[
+  {
+    "policy_id": "OPS-PA-001",
+    "title": "Prior Authorization Intake",
+    "section": "2.1 Required intake fields",
+    "request_types": ["prior_authorization"],
+    "excerpt": "Confirm consent, insurance plan, requested service, and supporting documents before submission."
+  },
+  {
+    "policy_id": "OPS-REF-002",
+    "title": "Referral Coordination",
+    "section": "3.2 Referral packet validation",
+    "request_types": ["referral"],
+    "excerpt": "Route complete referral packets to the receiving clinic; incomplete packets require staff review."
+  },
+  {
+    "policy_id": "OPS-SCH-003",
+    "title": "Scheduling Operations",
+    "section": "1.4 Request routing",
+    "request_types": ["scheduling"],
+    "excerpt": "Scheduling requests may proceed after consent confirmation and service identification."
+  },
+  {
+    "policy_id": "OPS-HIM-004",
+    "title": "Records Request Operations",
+    "section": "4.1 Release workflow",
+    "request_types": ["records_request"],
+    "excerpt": "Records requests must be validated for consent before routing to health information management."
+  }
+]
+

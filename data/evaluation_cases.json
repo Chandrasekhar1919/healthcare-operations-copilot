@@ -1,0 +1,46 @@
+[
+  {
+    "name": "complete scheduling request",
+    "intake": {
+      "request_id": "EVAL-001",
+      "request_type": "scheduling",
+      "submitted_urgency": "routine",
+      "requested_service": "Annual wellness visit",
+      "referring_department": "Primary Care",
+      "consent_confirmed": true,
+      "attachments": []
+    },
+    "expected_status": "ready",
+    "expected_queue": "scheduling-desk"
+  },
+  {
+    "name": "incomplete authorization",
+    "intake": {
+      "request_id": "EVAL-002",
+      "request_type": "prior_authorization",
+      "submitted_urgency": "soon",
+      "requested_service": "Advanced imaging",
+      "referring_department": "Orthopedics",
+      "consent_confirmed": true,
+      "attachments": []
+    },
+    "expected_status": "needs_human_review",
+    "expected_queue": "human-review"
+  },
+  {
+    "name": "urgent referral",
+    "intake": {
+      "request_id": "EVAL-003",
+      "request_type": "referral",
+      "submitted_urgency": "urgent",
+      "requested_service": "Specialist consultation",
+      "referring_department": "Primary Care",
+      "insurance_plan": "Synthetic PPO",
+      "consent_confirmed": true,
+      "attachments": ["synthetic-referral.pdf"]
+    },
+    "expected_status": "needs_human_review",
+    "expected_queue": "human-review"
+  }
+]
+
